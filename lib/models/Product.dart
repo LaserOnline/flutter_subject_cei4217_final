@@ -37,4 +37,46 @@ List<Product> demo_product = [
     price: 85,
     bgColor: const Color(0xFFEEEEED),
   ),
+  Product(
+    image: "assets/images/fas05.png",
+    title: "เสาชิงช้า",
+    price: 85,
+    bgColor: const Color(0xFFEEEEED),
+  ),
+  Product(
+    image: "assets/images/fas06.png",
+    title: "ตลาดน้ำตลิ่งชัน",
+    price: 85,
+    bgColor: const Color(0xFFEEEEED),
+  ),
+  Product(
+    image: "assets/images/fas07.png",
+    title: "สวนรถไฟ จตุจักร",
+    price: 85,
+    bgColor: const Color(0xFFEEEEED),
+  ),
+  Product(
+    image: "assets/images/fas08.png",
+    title: "ท่ามหาราช",
+    price: 85,
+    bgColor: const Color(0xFFEEEEED),
+  ),
+  Product(
+    image: "assets/images/fas09.png",
+    title: "ภูเขาทอง วัดสระเกศ",
+    price: 85,
+    bgColor: const Color(0xFFEEEEED),
+  ),
+  Product(
+    image: "assets/images/fas10.png",
+    title: "เยาวราช",
+    price: 85,
+    bgColor: const Color(0xFFEEEEED),
+  ),
+  Product(
+    image: "assets/images/fas11.png",
+    title: "สนามหลวง",
+    price: 85,
+    bgColor: const Color(0xFFEEEEED),
+  ),
 ];
