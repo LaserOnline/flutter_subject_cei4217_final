@@ -18,7 +18,7 @@ class NewArrivalProducts extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(vertical: defaultPadding),
           child: SectionTitle(
-            title: "สถานที่ แนะนำใหม่!!",
+            title: "สถานที่",
             pressSeeAll: () {},
           ),
         ),

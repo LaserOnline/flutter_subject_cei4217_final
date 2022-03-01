@@ -3,7 +3,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../constants.dart';
 
-
 const OutlineInputBorder outlineInputBorder = OutlineInputBorder(
   borderRadius: BorderRadius.all(Radius.circular(12)),
   borderSide: BorderSide.none,
@@ -22,7 +21,7 @@ class SearchForm extends StatelessWidget {
         decoration: InputDecoration(
           filled: true,
           fillColor: Colors.white,
-          hintText: "Search items...",
+          hintText: "ค้นหา...",
           border: outlineInputBorder,
           enabledBorder: outlineInputBorder,
           focusedBorder: outlineInputBorder,

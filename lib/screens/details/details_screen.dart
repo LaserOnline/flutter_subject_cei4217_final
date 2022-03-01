@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:stylish/constants.dart';
 import 'package:stylish/models/Product.dart';
-
 import 'components/color_dot.dart';
 
 class DetailsScreen extends StatelessWidget {
@@ -20,7 +19,7 @@ class DetailsScreen extends StatelessWidget {
           IconButton(
             onPressed: () {},
             icon: CircleAvatar(
-              backgroundColor: Colors.white,
+              backgroundColor: Color.fromARGB(255, 0, 0, 0),
               child: SvgPicture.asset(
                 "assets/icons/Heart.svg",
                 height: 20,
@@ -61,31 +60,18 @@ class DetailsScreen extends StatelessWidget {
                       ),
                       const SizedBox(width: defaultPadding),
                       Text(
-                        "\คะแนนรีวิว" + product.price.toString(),
+                        "\คะแนนรีวิว\t" + product.price.toString(),
                         style: Theme.of(context).textTheme.headline6,
                       ),
                     ],
                   ),
-                  const Padding(
+                  Padding(
                     padding: EdgeInsets.symmetric(vertical: defaultPadding),
                     child: Text(
-                      "ปลาปลาปลาปลาปลาปลาปลาปลาปลาปลาปลาปลาปลาปลาปลาปลา",
+                      product.massage,
                     ),
                   ),
                   const SizedBox(height: defaultPadding * 2),
-                  Center(
-                    child: SizedBox(
-                      width: 200,
-                      height: 48,
-                      child: ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                            primary: primaryColor,
-                            shape: const StadiumBorder()),
-                        child: const Text("ไป"),
-                      ),
-                    ),
-                  )
                 ],
               ),
             ),
