@@ -19,7 +19,7 @@ class DetailsScreen extends StatelessWidget {
           IconButton(
             onPressed: () {},
             icon: CircleAvatar(
-              backgroundColor: Color.fromARGB(255, 0, 0, 0),
+              backgroundColor: Color.fromARGB(255, 255, 255, 255),
               child: SvgPicture.asset(
                 "assets/icons/Heart.svg",
                 height: 20,
@@ -41,7 +41,11 @@ class DetailsScreen extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(defaultPadding,
                   defaultPadding * 2, defaultPadding, defaultPadding),
               decoration: const BoxDecoration(
-                color: Colors.white,
+                image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: NetworkImage(
+                      'https://data.whicdn.com/images/333961670/original.gif'),
+                ),
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(defaultBorderRadius * 3),
                   topRight: Radius.circular(defaultBorderRadius * 3),
@@ -69,6 +73,8 @@ class DetailsScreen extends StatelessWidget {
                     padding: EdgeInsets.symmetric(vertical: defaultPadding),
                     child: Text(
                       product.massage,
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
                     ),
                   ),
                   const SizedBox(height: defaultPadding * 2),
